@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exec3_MaintainUsers", "Exec3_MaintainUsers\Exec3_MaintainUsers.csproj", "{A39E67AC-0DC9-4258-877B-342218120C91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISpan.Utility", "ISpan.Utility\ISpan.Utility.csproj", "{6DCAF688-1C9D-4D37-B868-52E5CFC20A6E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A39E67AC-0DC9-4258-877B-342218120C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39E67AC-0DC9-4258-877B-342218120C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39E67AC-0DC9-4258-877B-342218120C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39E67AC-0DC9-4258-877B-342218120C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DCAF688-1C9D-4D37-B868-52E5CFC20A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCAF688-1C9D-4D37-B868-52E5CFC20A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCAF688-1C9D-4D37-B868-52E5CFC20A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCAF688-1C9D-4D37-B868-52E5CFC20A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
