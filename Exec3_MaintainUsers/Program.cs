@@ -13,23 +13,23 @@ namespace Exec3_MaintainUsers
 	{
 		static void Main(string[] args)
 		{
-			var dbHelper = new SqlDbHelper("default");
-			string sql = "SELECT Id, Title FROM News WHERE Id> @Id  ORDER BY Id ASC";
-			Console.WriteLine(sql);
 			try
 			{
-				var parameters = new SqlParameterBuilder().AddNInt("id", 0).Build();
-				DataTable news = dbHelper.Select(sql, parameters);
-				foreach (DataRow row in news.Rows)
-				{
-					int id = row.Field<int>("id");
-					string title = row.Field<string>("title");
-					Console.WriteLine($"Id={id}, Title={title}");
-				}
+				var Parameters = new SqlParameterBuilder().AddNVarchar("name",50,"willy")
+															.AddNVarchar("account",50,"base")
+															.AddNVarchar("password",50,"in")
+															.AddNDateTime("dateOfBirth",DateTime.Today)
+															.AddNInt("height",175)
+															.AddNInt("id",10)
+															.Build();
+				var SelectParameters = new SqlParameterBuilder().AddNInt("id",0).Build();
+				Crud crud= new Crud();
+				crud.Insert(Parameters);
+				Console.WriteLine("成功");
 			}
 			catch (Exception ex)
 			{
-				Console.WriteLine($"連線失敗, 原因 :{ex.Message}");
+				Console.WriteLine($"失敗原因 :{ex.Message}");
 			}
 
 		}
